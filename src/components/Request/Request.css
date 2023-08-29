@@ -1,6 +1,7 @@
-.header {
-  margin: 0;
-  padding: 8px 88px 8px 88px;
+.request {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 29px 88px 0;
 }
+

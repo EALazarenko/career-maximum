@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  column-gap: 16px;
+  padding: 8px 0 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #6E6E71;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.nav__link.active {
+  color: rgba(0, 0, 0, .8);
+  border-bottom: 2px solid #D47007;
+}

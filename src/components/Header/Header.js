@@ -1,15 +1,14 @@
+import NavLink from '../NavLink/NavLink';
+import Owner from '../Owner/Owner';
 import './Header.css';
-import Logo from '../Logo/Logo';
 
 const Header = () => {
 
   return (
-    <header className='header'>
-        <>
-          <Logo />
-        </>
-
-    </header >
+    <header className="header">
+      <NavLink />
+      <Owner />
+    </header>
   )
 }
 
