@@ -1,0 +1,4 @@
+.main__big-screen {
+  display: flex;
+  column-gap: 48px;
+}

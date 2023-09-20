@@ -1,0 +1,127 @@
+.chat {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  width: 431px;
+  max-height: 696px;
+  height: 100vh;
+  border-radius: 8px;
+  row-gap: 16px;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.chat__responsible {
+  border-bottom: 1px solid #D7D7D7;
+  background-color: #EDEDED;
+  padding: 6px 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+.chat__group {
+  display: flex;
+  row-gap: 16px;
+  flex-direction: column;
+}
+
+.chat__date {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #B7B8B8;
+  align-self: center;
+}
+
+.chat__message-group {
+  display: flex;
+  column-gap: 4px;
+  padding: 0 16px;
+}
+
+.chat__avatar {
+  align-self: flex-start;
+}
+
+.chat__message {
+  background-color: #FFF;
+  border-radius: 0px 8px 8px 8px;
+  border: 1px solid #D7D7D7;
+  max-width: 364px;
+  width: 100%;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__message_owner {
+  border-radius: 8px 0px 8px 8px;
+  background-color: rgba(28, 197, 14, 0.16);
+}
+
+.chat__text {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.80);
+  margin: 0;
+}
+
+.chat__time {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #6E6E71;
+  align-self: flex-end;
+}
+
+.chat__send-group {
+  background-color: #EDEDED;
+  display: flex;
+  padding: 16px 16px 16px 9px;
+  column-gap: 8px;
+  border-radius: 0 0 8px 8px;
+}
+
+.chat__attach-button {
+  border: none;
+  padding: 0 1px 0 6px;
+  cursor: pointer;
+}
+
+.chat__input {
+  background-color: #FFF;
+  padding: 0 16px;
+  width: 300px;
+  border: none;
+  border-radius: 12px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+
+}
+
+.chat__input::placeholder {
+  color: #6E6E71;
+}
+
+.chat__send-button {
+  border-radius: 12px;
+  background: #EB7800;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chat__button-img {
+  border-style: none;
+  align-self: center;
+}

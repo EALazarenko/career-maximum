@@ -1,0 +1,48 @@
+.status {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.status__group {
+  border-radius: 30px;
+  display: flex;
+  padding: 2px 6.5px;
+  max-width: 122px;
+  max-height: 20px;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.status__testing {
+background: rgba(34, 171, 248, 0.16);
+}
+
+.status__waiting {
+  background: rgba(250, 180, 20, 0.16);
+}
+
+.status__approved {
+  background: rgba(110, 110, 113, 0.16);
+}
+
+.status__overdue {
+  background: rgba(243, 32, 3, 0.16);
+}
+
+.status__title {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.status__date {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #6E6E71;
+}
