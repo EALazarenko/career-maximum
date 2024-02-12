@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, /* useLocation */ } from 'react-router-dom';
 /* import Main from '../Main/Main'; */
 import Header from '../Header/Header';
 import './App.css';
@@ -14,13 +14,18 @@ import Chat from '../Chat/Chat';
 
 function App() {
   const screenWidth = useScreenWidth();
+  /* const location = useLocation(); */
+
+  if (window.location.pathname === '/') {
+    window.location.replace(('/request'));
+  }
 
   return (
     <div className="page">
 
       {screenWidth > BIG_SCREEN ? (
         <>
-        <Header />
+          <Header />
           <Routes>
             <Route path="/request" element={<Main components={[<Request />, <Chat />]} />} />
             <Route path="/history" element={<Main components={[<History />, <Chat />]} />} />
@@ -28,13 +33,13 @@ function App() {
         </>
       ) : (
         <>
-        <Routes>
-          <Route path="/request" element={<Main components={[<Request />]} />} />
-          <Route path="/history" element={<Main components={[<History />]} />} />
-          <Route path="/chat" element={<Main components={[<Chat />]} />} />
-        </Routes>
-        <Header />
-      </>
+          <Routes>
+            <Route path="/request" element={<Main components={[<Request />]} />} />
+            <Route path="/history" element={<Main components={[<History />]} />} />
+            <Route path="/chat" element={<Main components={[<Chat />]} />} />
+          </Routes>
+          <Header />
+        </>
       )}
 
     </div>
