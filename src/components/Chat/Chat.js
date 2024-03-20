@@ -41,7 +41,7 @@ const Chat = () => {
         <button className='chat__attach-button' type='submit'>
           <img className='chat__attachment' src={attachIcon} alt='Прикрепить' />
         </button>
-        <input
+        <textarea
           className='chat__input'
           type='text'
           id="input-massage"

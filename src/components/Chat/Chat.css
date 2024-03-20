@@ -53,6 +53,7 @@
   padding: 7px;
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
 }
 
 .chat__message_owner {
@@ -103,7 +104,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-
+  overflow: auto;
+  outline: none;
+  resize: none;
 }
 
 .chat__input::placeholder {

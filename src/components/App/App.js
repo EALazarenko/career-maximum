@@ -38,7 +38,7 @@ function App() {
             <Route path="/history" element={<Main components={[<History />]} />} />
             <Route path="/chat" element={<Main components={[<Chat />]} />} />
           </Routes>
-          <Header />
+          {/* <Header /> */}
         </>
       )}
 
